@@ -1,0 +1,3 @@
+[console_scripts]
+pi = pkg_py_pi.main_pi:main
+

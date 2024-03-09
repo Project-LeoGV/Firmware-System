@@ -1,0 +1,6 @@
+source;share/pkg_py_pi/hook/pythonpath.ps1
+source;share/pkg_py_pi/hook/pythonpath.dsv
+source;share/pkg_py_pi/hook/pythonpath.sh
+source;share/pkg_py_pi/hook/ament_prefix_path.ps1
+source;share/pkg_py_pi/hook/ament_prefix_path.dsv
+source;share/pkg_py_pi/hook/ament_prefix_path.sh

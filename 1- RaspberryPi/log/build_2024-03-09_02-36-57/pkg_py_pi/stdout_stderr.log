@@ -1,0 +1,35 @@
+running egg_info
+creating ../build/pkg_py_pi/pkg_py_pi.egg-info
+writing ../build/pkg_py_pi/pkg_py_pi.egg-info/PKG-INFO
+writing dependency_links to ../build/pkg_py_pi/pkg_py_pi.egg-info/dependency_links.txt
+writing entry points to ../build/pkg_py_pi/pkg_py_pi.egg-info/entry_points.txt
+writing requirements to ../build/pkg_py_pi/pkg_py_pi.egg-info/requires.txt
+writing top-level names to ../build/pkg_py_pi/pkg_py_pi.egg-info/top_level.txt
+writing manifest file '../build/pkg_py_pi/pkg_py_pi.egg-info/SOURCES.txt'
+reading manifest file '../build/pkg_py_pi/pkg_py_pi.egg-info/SOURCES.txt'
+writing manifest file '../build/pkg_py_pi/pkg_py_pi.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/build/pkg_py_pi/build
+creating /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/build/pkg_py_pi/build/lib
+creating /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/build/pkg_py_pi/build/lib/pkg_py_pi
+copying pkg_py_pi/main_pi.py -> /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/build/pkg_py_pi/build/lib/pkg_py_pi
+copying pkg_py_pi/__init__.py -> /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/build/pkg_py_pi/build/lib/pkg_py_pi
+running install
+running install_lib
+creating /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/install/pkg_py_pi/lib/python3.10/site-packages/pkg_py_pi
+copying /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/build/pkg_py_pi/build/lib/pkg_py_pi/main_pi.py -> /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/install/pkg_py_pi/lib/python3.10/site-packages/pkg_py_pi
+copying /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/build/pkg_py_pi/build/lib/pkg_py_pi/__init__.py -> /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/install/pkg_py_pi/lib/python3.10/site-packages/pkg_py_pi
+byte-compiling /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/install/pkg_py_pi/lib/python3.10/site-packages/pkg_py_pi/main_pi.py to main_pi.cpython-310.pyc
+byte-compiling /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/install/pkg_py_pi/lib/python3.10/site-packages/pkg_py_pi/__init__.py to __init__.cpython-310.pyc
+running install_data
+creating /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/install/pkg_py_pi/share/ament_index
+creating /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/install/pkg_py_pi/share/ament_index/resource_index
+creating /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/install/pkg_py_pi/share/ament_index/resource_index/packages
+copying resource/pkg_py_pi -> /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/install/pkg_py_pi/share/ament_index/resource_index/packages
+copying package.xml -> /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/install/pkg_py_pi/share/pkg_py_pi
+running install_egg_info
+Copying ../build/pkg_py_pi/pkg_py_pi.egg-info to /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/install/pkg_py_pi/lib/python3.10/site-packages/pkg_py_pi-0.0.0-py3.10.egg-info
+running install_scripts
+Installing pi script to /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/install/pkg_py_pi/lib/pkg_py_pi
+writing list of installed files to '/home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/build/pkg_py_pi/install.log'
