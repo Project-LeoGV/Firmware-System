@@ -80,10 +80,10 @@ int main(void)
 		APP_voidReceiveDataUSB(buffer, &currentMessage);
 
 		// Check if the message is new
-		sameMsg = APP_u8SameMessage(&previousMessage, &currentMessage);
+		//sameMsg = APP_u8SameMessage(&previousMessage, &currentMessage);
 
 		// Send CAN Message
-		if(sameMsg == 0 && currentMessage.msg_id != 0x000)
+		if(currentMessage.msg_id != 0x000)
 		{
 			// Send CAN message
 			transmitFrame.id   = currentMessage.msg_id;
@@ -107,11 +107,11 @@ int main(void)
 			CAN_voidSendDataFrame(CAN1, &transmitFrame);
 
 			// Update previous message
-			previousMessage.msg_id = currentMessage.msg_id;
-			previousMessage.rtr = currentMessage.rtr;
-			previousMessage.dlc = currentMessage.dlc;
-			for(u8 i = 0; i < currentMessage.dlc; i++)
-				previousMessage.data[i] = currentMessage.data[i];
+			buffer[0] = '0';
+			buffer[1] = '0';
+			buffer[2] = '0';
+			buffer[3] = '0';
+
 
 			delay(50);
 			// Check CAN Receive Buffer
