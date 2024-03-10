@@ -1,0 +1,24 @@
+[0.606s] Invoking command in '/home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/pkg_py_pi': PYTHONPATH=/home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/build/pkg_py_pi/prefix_override:/home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/install/pkg_py_pi/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/pkg_py_pi build --build-base /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/build/pkg_py_pi/build install --record /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/build/pkg_py_pi/install.log --single-version-externally-managed
+[0.792s] running egg_info
+[0.793s] writing ../build/pkg_py_pi/pkg_py_pi.egg-info/PKG-INFO
+[0.793s] writing dependency_links to ../build/pkg_py_pi/pkg_py_pi.egg-info/dependency_links.txt
+[0.794s] writing entry points to ../build/pkg_py_pi/pkg_py_pi.egg-info/entry_points.txt
+[0.794s] writing requirements to ../build/pkg_py_pi/pkg_py_pi.egg-info/requires.txt
+[0.794s] writing top-level names to ../build/pkg_py_pi/pkg_py_pi.egg-info/top_level.txt
+[0.796s] reading manifest file '../build/pkg_py_pi/pkg_py_pi.egg-info/SOURCES.txt'
+[0.940s] writing manifest file '../build/pkg_py_pi/pkg_py_pi.egg-info/SOURCES.txt'
+[0.941s] running build
+[0.941s] running build_py
+[0.941s] copying pkg_py_pi/main_pi.py -> /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/build/pkg_py_pi/build/lib/pkg_py_pi
+[0.942s] running install
+[0.944s] running install_lib
+[0.947s] copying /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/build/pkg_py_pi/build/lib/pkg_py_pi/main_pi.py -> /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/install/pkg_py_pi/lib/python3.10/site-packages/pkg_py_pi
+[0.950s] byte-compiling /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/install/pkg_py_pi/lib/python3.10/site-packages/pkg_py_pi/main_pi.py to main_pi.cpython-310.pyc
+[0.954s] running install_data
+[0.957s] running install_egg_info
+[0.965s] removing '/home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/install/pkg_py_pi/lib/python3.10/site-packages/pkg_py_pi-0.0.0-py3.10.egg-info' (and everything under it)
+[0.966s] Copying ../build/pkg_py_pi/pkg_py_pi.egg-info to /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/install/pkg_py_pi/lib/python3.10/site-packages/pkg_py_pi-0.0.0-py3.10.egg-info
+[0.970s] running install_scripts
+[0.999s] Installing pi script to /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/install/pkg_py_pi/lib/pkg_py_pi
+[0.999s] writing list of installed files to '/home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/build/pkg_py_pi/install.log'
+[1.016s] Invoked command in '/home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/pkg_py_pi' returned '0': PYTHONPATH=/home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/build/pkg_py_pi/prefix_override:/home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/install/pkg_py_pi/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/pkg_py_pi build --build-base /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/build/pkg_py_pi/build install --record /home/mahmoud/Desktop/WareHouseRobot/GitHub/System/1- RaspberryPi/build/pkg_py_pi/install.log --single-version-externally-managed
