@@ -22,25 +22,28 @@ class RaspberryPiNode(Node):
         self.sensors_publisher_ = self.create_publisher(String, "Sensors", 10)  # Topic for Feedbacking Sensors 
         self.BMS_publisher_ = self.create_publisher(String,"BMS",10)            # Topic for Feedbacking BMS
         
-        self.timer = self.create_timer(1, self.sensors_callback)
+        self.timer = self.create_timer(2, self.sensors_callback)
         
         self.get_logger().info("Pi Node Has started")
     
     def sensors_callback(self):
+        print("Callback Called")
         request = "00F1000000000"
-        #ser.write(request.encode('ascii'))
-        #Ack = ser.readline().decode()
-        Ack = "0000\n"
+        ser.write(request.encode('ascii'))
+        Ack = ser.readline().decode()
+        # Ack = "0000\n"
         message = String()
         
         if Ack == "0001\n":
             print("Sending...")
         elif Ack == "0002\n":
             print("Recciving...")
-            #message.data = ser.readline().decode()
-        
-        self.temp += 1
-        message.data = str(self.temp)
+            message.data = ser.readline().decode()
+        else:
+            print("No Ack Received")
+        print("reciving finished")
+        # self.temp += 1
+        # message.data = str(self.temp)
         self.sensors_publisher_.publish(message)
         
     def ESCs_callback(self, msg):
@@ -49,11 +52,12 @@ class RaspberryPiNode(Node):
         # Send and Receive Ack from USB
         ser.write(message.encode('ascii'))
         Ack = ser.readline().decode()
-        Ack = "0000\n"
         if Ack == "0001\n":
             print("Sending...")
         elif Ack == "0002\n":
             print("Recciving...")
+        else:
+            print("No Ack Received")
             
         self.get_logger().info("ESC is receiving: {}".format(message))
         
@@ -63,12 +67,12 @@ class RaspberryPiNode(Node):
         # Send and Receive Ack from USB
         ser.write(message.encode('ascii'))
         Ack = ser.readline().decode()
-        Ack = "0000\n"
         if Ack == "0001\n":
             print("Sending...")
         elif Ack == "0002\n":
             print("Recciving...")
-            
+        else:
+            print("No Ack Received")   
         self.get_logger().info("Stepper is receiving: {}".format(message))
         
 
