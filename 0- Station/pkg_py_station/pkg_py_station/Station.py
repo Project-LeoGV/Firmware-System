@@ -13,19 +13,30 @@ class Signal(QObject):
     Publish_message = pyqtSignal(dict)
 
 class ROSListenerNode:
+    from Stepper_Callback import stepperControl
+    from ODrive_Callback import ODriveControl
+
     def __init__(self):
         self.robot_name = "LeoGV"
         self.node = rclpy.create_node("node_station")
-        self.subscription = self.node.create_subscription(String, 'BMS', self.callback, 10)
-        
+        # Node publishers
         self.motors_publisher = self.node.create_publisher(String,"ESCs",10)
         self.plates_publisher = self.node.create_publisher(String,"Stepper",10)
-
-    def callback(self, msg):
-        print("Received message:", msg.data)
-        self.node.get_logger().info(msg.data)
-        self.signal.update_label.emit(msg.data)
+        # Node subscribers
+        self.plates_Subscriber = self.node.create_subscription(String,"Sensors",self.ODriveMotor1_Feedback,10)
+        self.BMS_Subscriber = self.node.create_subscription(String, 'BMS', self.ODriveMotor2_Feedback, 10)
         
+    def ODriveMotor1_Feedback(self,msg):
+        print("ODrive motor1 has received feedback: ",msg.data)
+        self.signal.update_label.emit(msg.data)
+    
+    def ODriveMotor2_Feedback(self,msg):
+        print("ODrive motor2 has received feedback: ",msg.data)
+        self.signal2.update_label.emit(msg.data)
+
+
+    def BMS_Feedback(self):
+        pass
 
     def run(self, signal):
         self.signal = signal
@@ -37,27 +48,6 @@ class ROSListenerNode:
             executor.shutdown()
             rclpy.shutdown()
 
-    def stepperControl(self,buttonID):
-        msg = String()
-        if(buttonID == "up"):
-            msg.data = "0010402500000"                 #change with correct msg
-        elif(buttonID == "down"):
-            msg.data = "0030401200000"
-        self.plates_publisher.publish(msg)
-
-    def ODriveControl(self,buttonID):
-        msg = String()
-        if(buttonID == "forward"):
-            msg.data = "0020525010000"
-        elif(buttonID == "reverse"):
-            msg.data = "0060400910000"
-        self.motors_publisher.publish(msg)
-
-    #def node_publisher_(self, text):
-    #    msg = String()
-    #    msg.data = 'Forward: ' + text['Forward'] +'Backward: ' + text['Backward']
-    #    self.plates_publisher.publish(msg)
-
 def main(args=None):
     from GUI_Backend import LeoGUI
     rclpy.init()
@@ -66,7 +56,6 @@ def main(args=None):
     
     signal = Signal()
     signal.update_label.connect(GUI_.update_gui) 
-    
     
     ros_thread = Thread(target=ROSListenerNode().run, args=(signal,))
     ros_thread.start()
