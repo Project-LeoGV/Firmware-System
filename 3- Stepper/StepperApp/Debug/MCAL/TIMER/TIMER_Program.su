@@ -1,0 +1,11 @@
+../MCAL/TIMER/TIMER_Program.c:18:6:TIMERx_voidCfg_IC	16	static
+../MCAL/TIMER/TIMER_Program.c:114:13:TIMER_voidSelectEdge	16	static
+../MCAL/TIMER/TIMER_Program.c:194:5:TIMERx_u32GetCaptureValue	24	static
+../MCAL/TIMER/TIMER_Program.c:226:6:TIMERx_voidCfg_PWM	16	static
+../MCAL/TIMER/TIMER_Program.c:415:6:TIMERx_voidCfg_PulseIn	16	static
+../MCAL/TIMER/TIMER_Program.c:487:14:TIMERx_xMeasurePWM	32	static
+../MCAL/TIMER/TIMER_Program.c:505:6:TIMERx_voidStartCounter	16	static
+../MCAL/TIMER/TIMER_Program.c:509:6:TIMERx_voidStopCounter	16	static
+../MCAL/TIMER/TIMER_Program.c:513:6:TIMERx_voidCounter_Init	16	static
+../MCAL/TIMER/TIMER_Program.c:549:6:TIMERx_voidDelay_ms	24	static
+../MCAL/TIMER/TIMER_Program.c:571:6:TIMERx_voidSetPeriod_DutyCycle	24	static

@@ -1,0 +1,3 @@
+../MCAL/ADC/ADC_Program.c:11:6:ADC_voidInit	21
+../MCAL/ADC/ADC_Program.c:105:6:ADC_voidStartConversion	6
+../MCAL/ADC/ADC_Program.c:131:6:ADC_voidSingleRead	8

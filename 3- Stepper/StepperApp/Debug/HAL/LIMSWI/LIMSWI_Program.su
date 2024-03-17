@@ -1,0 +1,2 @@
+../HAL/LIMSWI/LIMSWI_Program.c:10:6:LIMSWI_voidSwitchInit	8	static
+../HAL/LIMSWI/LIMSWI_Program.c:16:4:LIMSWI_u8SwitchPress	24	static

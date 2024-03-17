@@ -1,0 +1,6 @@
+../Src/main.c:26:5:main	48	static
+../Src/main.c:100:6:APP_voidSystemClockInit	8	static
+../Src/main.c:114:6:APP_voidGpioInit	24	static
+../Src/main.c:142:6:APP_voidCanInit	48	static
+../Src/main.c:166:6:APP_voidHoming	16	static
+../Src/main.c:176:6:APP_voidEnsureSafety	4	static

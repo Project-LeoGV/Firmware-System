@@ -1,0 +1,12 @@
+../MCAL/GPIO/GPIO_Program.c:28:13:GPIO_voidSetPinMode	8
+../MCAL/GPIO/GPIO_Program.c:61:13:GPIO_voidSetPinOutput_typ_spd	10
+../MCAL/GPIO/GPIO_Program.c:104:6:GPIO_voidSetPinValue	10
+../MCAL/GPIO/GPIO_Program.c:143:13:GPIO_voidSetPinPUPD	8
+../MCAL/GPIO/GPIO_Program.c:176:5:GPIO_u8GetPinData	8
+../MCAL/GPIO/GPIO_Program.c:210:6:GPIO_voidTogglePin	8
+../MCAL/GPIO/GPIO_Program.c:242:13:GPIO_voidAltFunc	9
+../MCAL/GPIO/GPIO_Program.c:284:6:GPIO_voidSetPortValue	8
+../MCAL/GPIO/GPIO_Program.c:317:5:GPIO_u16GetPortData	8
+../MCAL/GPIO/GPIO_Program.c:351:6:GPIO_voidTogglePort	8
+../MCAL/GPIO/GPIO_Program.c:383:6:GPIO_voidInitPin	1
+../MCAL/GPIO/GPIO_Program.c:390:6:GPIO_voidInitPort	2
