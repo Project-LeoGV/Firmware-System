@@ -28,7 +28,7 @@ class RaspberryPiNode(Node):
     
     def sensors_callback(self):
         print("Callback Called")
-        request = "00F1000000000"
+        request = "0291000000000"
         ser.write(request.encode('ascii'))
         Ack = ser.readline().decode()
         # Ack = "0000\n"
