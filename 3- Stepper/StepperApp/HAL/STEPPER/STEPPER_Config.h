@@ -17,6 +17,7 @@
 
 
 
+
 /*Stepper Motor Configuration*/
 static STEPPER_config_t STEPPER_mod[4] =
 {
@@ -42,9 +43,9 @@ static STEPPER_config_t STEPPER_mod[4] =
 		},
 		{
 				GPIO_PORTB,
-				GPIO_PIN15,
-				GPIO_PORTB,
 				GPIO_PIN14,
+				GPIO_PORTB,
+				GPIO_PIN15,
 				GPIO_PORTA,
 				GPIO_PIN6,
 				GPIO_PORTA,

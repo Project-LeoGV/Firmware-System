@@ -16,6 +16,10 @@ Src/main.o: ../Src/main.c ../Src/../Inc/main.h \
  ../Src/../Inc/../MCAL/FDCAN/../../LIB/STD_TYPES.h \
  ../Src/../Inc/../MCAL/FDCAN/CAN_Registers.h \
  ../Src/../Inc/../MCAL/FDCAN/CAN_Config.h \
+ ../Src/../Inc/../MCAL/ADC/ADC_Interface.h \
+ ../Src/../Inc/../MCAL/ADC/../../LIB/STD_TYPES.h \
+ ../Src/../Inc/../MCAL/ADC/ADC_Registers.h \
+ ../Src/../Inc/../MCAL/ADC/ADC_Config.h \
  ../Src/../Inc/../HAL/STEPPER/STEPPER_Interface.h \
  ../Src/../Inc/../HAL/STEPPER/../../LIB/STD_TYPES.h \
  ../Src/../Inc/../HAL/STEPPER/../../MCAL/GPIO/GPIO_Interface.h \
@@ -45,6 +49,10 @@ Src/main.o: ../Src/main.c ../Src/../Inc/main.h \
 ../Src/../Inc/../MCAL/FDCAN/../../LIB/STD_TYPES.h:
 ../Src/../Inc/../MCAL/FDCAN/CAN_Registers.h:
 ../Src/../Inc/../MCAL/FDCAN/CAN_Config.h:
+../Src/../Inc/../MCAL/ADC/ADC_Interface.h:
+../Src/../Inc/../MCAL/ADC/../../LIB/STD_TYPES.h:
+../Src/../Inc/../MCAL/ADC/ADC_Registers.h:
+../Src/../Inc/../MCAL/ADC/ADC_Config.h:
 ../Src/../Inc/../HAL/STEPPER/STEPPER_Interface.h:
 ../Src/../Inc/../HAL/STEPPER/../../LIB/STD_TYPES.h:
 ../Src/../Inc/../HAL/STEPPER/../../MCAL/GPIO/GPIO_Interface.h:

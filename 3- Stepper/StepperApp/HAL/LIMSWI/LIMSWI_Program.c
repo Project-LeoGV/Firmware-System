@@ -16,6 +16,6 @@ void LIMSWI_voidSwitchInit(void)
 u8 LIMSWI_u8SwitchPress(u8 A_u8SwitchPort,u8 A_u8SwitchPin)
 {
 	u8 reading = GPIO_u8GetPinData(A_u8SwitchPort, A_u8SwitchPin);
-	return !reading;						//Inverted Logic: 0 -> Button is pressed 1-> Button is not pressed
+	return reading;						//Inverted Logic: 0 -> Button is pressed 1-> Button is not pressed
 }
 

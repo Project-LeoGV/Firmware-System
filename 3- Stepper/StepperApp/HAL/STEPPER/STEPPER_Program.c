@@ -18,7 +18,9 @@ void STEPPER_voidInitMotor(STEPPER_config_t* A_stepperMotor)
         .Pin = A_stepperMotor->dir_PIN,
         .Mode = GPIO_MODE_OUTPUT,
         .OutputType = GPIO_OT_PUSHPULL,
-        .OutputSpeed = GPIO_SPEED_LOW
+        .OutputSpeed = GPIO_SPEED_LOW,
+		.InputPull = GPIO_NO_PULL,
+		.AltFunc = GPIO_AF0
     };
 
     MGPIO_Config_t stepConfig = {
@@ -26,7 +28,9 @@ void STEPPER_voidInitMotor(STEPPER_config_t* A_stepperMotor)
         .Pin = A_stepperMotor->step_PIN,
         .Mode = GPIO_MODE_OUTPUT,
         .OutputType = GPIO_OT_PUSHPULL,
-        .OutputSpeed = GPIO_SPEED_LOW
+        .OutputSpeed = GPIO_SPEED_LOW,
+		.InputPull = GPIO_NO_PULL,
+		.AltFunc = GPIO_AF0
     };
 
     MGPIO_Config_t ISENAConfig = {
@@ -34,7 +38,9 @@ void STEPPER_voidInitMotor(STEPPER_config_t* A_stepperMotor)
         .Pin = A_stepperMotor->ISENA_PIN,
         .Mode = GPIO_MODE_INPUT,
         .OutputType = GPIO_OT_PUSHPULL,
-        .OutputSpeed = GPIO_SPEED_LOW
+        .OutputSpeed = GPIO_SPEED_LOW,
+		.InputPull = GPIO_NO_PULL,
+		.AltFunc = GPIO_AF0
     };
 
     MGPIO_Config_t ISENBConfig = {
@@ -42,10 +48,13 @@ void STEPPER_voidInitMotor(STEPPER_config_t* A_stepperMotor)
         .Pin = A_stepperMotor->ISENB_PIN,
         .Mode = GPIO_MODE_INPUT,
         .OutputType = GPIO_OT_PUSHPULL,
-        .OutputSpeed = GPIO_SPEED_LOW
+        .OutputSpeed = GPIO_SPEED_LOW,
+		.InputPull = GPIO_NO_PULL,
+		.AltFunc = GPIO_AF0
     };
 
     /*Initialization for each pin using the GPIO_voidInitPin function*/
+
     GPIO_voidInitPin(&dirConfig);
     GPIO_voidInitPin(&stepConfig);
     GPIO_voidInitPin(&ISENAConfig);

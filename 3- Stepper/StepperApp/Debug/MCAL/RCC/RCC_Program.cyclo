@@ -4,4 +4,4 @@
 ../MCAL/RCC/RCC_Program.c:113:6:RCC_voidSSMPeripheralClockEnable	7
 ../MCAL/RCC/RCC_Program.c:142:6:RCC_voidSSMPeripheralClockDisable	7
 ../MCAL/RCC/RCC_Program.c:171:6:RCC_voidPeripheralReset	7
-../MCAL/RCC/RCC_Program.c:200:6:RCC_voidPeripheralClockCfg	21
+../MCAL/RCC/RCC_Program.c:200:6:RCC_voidPeripheralClockCfg	19
